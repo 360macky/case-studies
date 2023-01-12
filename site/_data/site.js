@@ -3,9 +3,9 @@ module.exports = {
   shortDesc:
     "An 11ty starter kit designed to help you add rich features to a site without a complicated build process.",
   url: "",
-  authorEmail: "mike@madebymike.com.au",
-  authorHandle: "@MikeRiethmuller",
-  authorName: "Mike",
+  authorEmail: "hello@marceloarias.com",
+  authorHandle: "@360macky",
+  authorName: "Marcelo Arias",
   postsPerPage: 4,
   socialImage: "/img/social.jpg",
   theme: {
