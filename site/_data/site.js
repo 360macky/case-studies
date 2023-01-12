@@ -1,5 +1,5 @@
 module.exports = {
-  name: "Supermaya",
+  name: "Portfolio Case Studies",
   shortDesc:
     "An 11ty starter kit designed to help you add rich features to a site without a complicated build process.",
   url: "",
@@ -15,8 +15,8 @@ module.exports = {
       highlight: "#666",
     },
     secondary: {
-      background: "black",
-      text: "white",
+      background: "#1b1f25",
+      text: "#8ea6fa",
       highlight: "#666",
     },
   },

@@ -78,10 +78,6 @@ img {
   }
 }
 
-:focus {
-  outline: 2px dashed $COLOR_MID;
-  outline-offset: 2px;
-}
 [tabindex="-1"]:focus {
   outline: none;
 }
