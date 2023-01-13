@@ -11,7 +11,15 @@
 }
 
 .l-description {
+  font-weight: 500;
+}
+
+.l-first {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-weight: 500;
+}
+
+.l-second {
+  text-align: center;
+  color: var(--COLOR_DARK);
 }

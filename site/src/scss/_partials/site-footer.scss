@@ -14,11 +14,23 @@
 }
 
 .l-site-footer-split > :first-child {
-  flex-basis: 50%;
+  flex-basis: 100%;
   font-size: $SCALE--1;
+  text-align: center;
 }
 
 .powered-by {
   text-align: center;
   font-size: $SCALE--1;
+}
+
+.email {
+  text-align: center;
+  font-size: $SCALE--1;
+  color: var(--COLOR_DARK);
+}
+
+.go-portfolio {
+  text-align: center;
+  padding-top: 1rem;
 }
