@@ -11,31 +11,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml"/>
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+
     {% if site.theme %}
     <style>
       :root {
-        {% if site.theme.secondary.background %}
-          --THEME_BACKGROUND: {{site.theme.primary.background}};
-        {% endif %}
-        {% if site.theme.primary.text %}
-          --THEME_COLOR: {{site.theme.primary.text}};
-        {% endif %}
-        {% if site.theme.primary.highlight %}
-          --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
-        {% endif %}
+        --THEME_BACKGROUND: {{site.theme.primary.background}};
+        --THEME_COLOR: {{site.theme.primary.text}};
+        --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
+        --THEME_HOVER: #7a97ff;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --THEME_BACKGROUND: #1b1f25;
+          --THEME_COLOR: #fff;
+          --THEME_HIGHLIGHT: #fff;
+          --THEME_HOVER: #7a97ff;
+        }
       }
 
       .theme-secondary {
-        {% if site.theme.secondary.background %}
+        --THEME_BACKGROUND: {{site.theme.secondary.background}};
+        --THEME_COLOR: #425fc7;
+        --THEME_HIGHLIGHT: {{site.theme.secondary.highlight}};
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .theme-secondary {
           --THEME_BACKGROUND: {{site.theme.secondary.background}};
-        {% endif %}
-        {% if site.theme.secondary.text %}
-          --THEME_COLOR: {{site.theme.secondary.text}};
-        {% endif %}
-        {% if site.theme.secondary.highlight %}
+          --THEME_COLOR: #7a97ff;
           --THEME_HIGHLIGHT: {{site.theme.secondary.highlight}};
-        {% endif %}
+        }
       }
     </style>
     {% endif %}
