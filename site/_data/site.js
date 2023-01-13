@@ -1,8 +1,8 @@
 module.exports = {
-  name: "Portfolio Case Studies",
+  name: "Marcelo's Case Studies",
   shortDesc:
-    "An 11ty starter kit designed to help you add rich features to a site without a complicated build process.",
-  url: "",
+    "Every product has a process with challenges. Here I share the stories behind each one.",
+  url: "https://articles.marceloarias.com",
   authorEmail: "hello@marceloarias.com",
   authorHandle: "@360macky",
   authorName: "Marcelo Arias",
