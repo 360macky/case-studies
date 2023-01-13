@@ -1,5 +1,5 @@
 <footer role="contentinfo">
-  <div class="theme-secondary theme-bg theme-color">
+  <div class="theme-secondary theme-color">
     <div class="l-container">
       <div class="l-site-footer">
         <div class="l-site-footer-split">
@@ -10,10 +10,6 @@
             {% if site.shortDesc %}
               <p>{{ site.shortDesc }}</p>
             {% endif %}
-          </div>
-          <div class="l-footer-nav">
-            {% set navLocation = 'footer' %}
-            {% include "partials/nav.njk" %}
           </div>
         </div>
         <p class="powered-by">Made by {{site.authorName}} with 11ty and Keystone</p>
