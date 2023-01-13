@@ -6,14 +6,9 @@
       "external": false
     },
     {
-      "text": "Posts",
+      "text": "Articles",
       "url": "/posts",
       "external": false
-    },
-    {
-      "text": "Twitter",
-      "url": "https://twitter.com/360macky",
-      "external": true
     },
     {
       "text": "Portfolio",
