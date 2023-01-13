@@ -57,13 +57,11 @@ Currently the plugin is not published on the NASA Open MCT Community Plugins sec
 
 ## References
 
-
-- [NASA Open MCT]()
-- [GraphQL](https://graphql.org/)
-- [Apollo client](https://www.apollographql.com/docs/react/)
-- [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- [TypeScript](https://www.typescriptlang.org/)
-- [RollUp](https://rollupjs.org/guide/en/)
-- [Open MCT YAMCS]()
-- [Universal Module Definition]()
-- [NASA Spacecraft]()
+- <a href="" target="_blank">NASA Open MCT</a>
+- <a href="https://graphql.org/" target="_blank">GraphQL</a>
+- <a href="https://www.apollographql.com/docs/react/" target="_blank">Apollo client</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">fetch API</a>
+- <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>
+- <a href="https://rollupjs.org/guide/en/" target="_blank">RollUp</a>
+- <a href="https://github.com/akhenry/openmct-yamcs" target="_blank">Open MCT YAMCS</a>
+- <a href="https://www.oreilly.com/library/view/building-enterprise-javascript/9781788477321/03979156-167c-4598-85e8-0544241e2aed.xhtml" target="_blank">Universal Module Definition</a>
