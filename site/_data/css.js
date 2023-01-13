@@ -9,7 +9,7 @@ const targets = {
   "keystone-comments": "site/src/scss/keystone-comments.scss",
   "keystone-claps": "site/src/scss/keystone-claps.scss",
   "keystone-login": "site/src/scss/keystone-login.scss",
-  "keystone-bookmarks": "site/src/scss/keystone-bookmarks.scss"
+  "keystone-bookmarks": "site/src/scss/keystone-bookmarks.scss",
 };
 
 // Create an object with the compiled CSS for each key in targets

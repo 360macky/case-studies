@@ -14,7 +14,7 @@ const criticalCSSTransform = require("./site/transforms/critical-css-transform.j
 // Import data files
 const site = require("./site/_data/site.js");
 
-module.exports = function(config) {
+module.exports = function (config) {
   // Filters
   config.addFilter("dateFilter", dateFilter);
   config.addFilter("markdownFilter", markdownFilter);
@@ -31,16 +31,16 @@ module.exports = function(config) {
 
   // Custom collections
   const now = new Date();
-  const livePosts = post => post.date <= now && !post.data.draft;
-  config.addCollection("posts", collection => {
+  const livePosts = (post) => post.date <= now && !post.data.draft;
+  config.addCollection("posts", (collection) => {
     return [
-      ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts)
+      ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts),
     ].reverse();
   });
 
-  config.addCollection("postFeed", collection => {
+  config.addCollection("postFeed", (collection) => {
     return [
-      ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts)
+      ...collection.getFilteredByGlob("./site/posts/*.md").filter(livePosts),
     ]
       .reverse()
       .slice(0, site.postsPerPage);
@@ -66,8 +66,8 @@ module.exports = function(config) {
   return {
     dir: {
       input: "site",
-      output: "dist"
+      output: "dist",
     },
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
   };
 };

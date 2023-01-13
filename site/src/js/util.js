@@ -2,16 +2,16 @@ export const graphql = (query, variables = {}) => {
   return fetch(process.env.KEYSTONE_API, {
     method: `POST`,
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
     credentials: "include",
     body: JSON.stringify({
       variables,
-      query
-    })
+      query,
+    }),
   })
-    .then(result => result.json())
-    .catch(error => console.log(error));
+    .then((result) => result.json())
+    .catch((error) => console.log(error));
 };
 export const getAuthenticatedUser = () =>
   graphql(`
@@ -26,18 +26,18 @@ export const getAuthenticatedUser = () =>
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result && result.data) {
       const {
-        data: { authenticatedUser }
+        data: { authenticatedUser },
       } = result;
       return authenticatedUser;
     }
     return false;
   });
 
-export const validateInputs = fields =>
-  fields.every(field => field.value !== "");
+export const validateInputs = (fields) =>
+  fields.every((field) => field.value !== "");
 export const fetchData = (query, data) => {
   return graphql(query, data).then(({ data }) => {
     if (data) {

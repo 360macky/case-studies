@@ -10,16 +10,16 @@ module.exports = async (value, outputPath) => {
       dimensions: [
         {
           height: 400,
-          width: 599
+          width: 599,
         },
         {
           height: 900,
-          width: 899
+          width: 899,
         },
         {
           height: 900,
-          width: 1201
-        }
+          width: 1201,
+        },
       ],
       inline: true,
       // Ignore is Experimental: Includes only layout & utility classes (requires '.l-' prefixed CSS)

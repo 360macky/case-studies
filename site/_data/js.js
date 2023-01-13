@@ -11,7 +11,7 @@ const targets = {
   "keystone-comments": "site/src/js/keystone-comments.js",
   "keystone-claps": "site/src/js/keystone-claps.js",
   "keystone-login": "site/src/js/keystone-login.js",
-  "keystone-bookmarks": "site/src/js/keystone-bookmarks.js"
+  "keystone-bookmarks": "site/src/js/keystone-bookmarks.js",
 };
 
 // Create an object with the compiled files from each entry defined in targets

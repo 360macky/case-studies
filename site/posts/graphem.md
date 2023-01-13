@@ -20,7 +20,6 @@ The design of the solution was based on capturing the telemetry data from a Grap
 
 GraphQL offers a query language that allows you to request data from a server. The query language is based on the concept of types and fields. And also offers a real-time subscription mechanism to receive data from the server. The data is returned in <a href="https://www.json.org/json-en.html"  target="_blank">JSON format</a>. Graphem applies this concept to the NASA Open MCT plugin architecture.
 
-
 ## Development Process
 
 ### Building a basic plugin
@@ -45,11 +44,11 @@ Currently there is an iniative to add Types support for NASA Open MCT. You can f
 
 Once the plugin was ready, it was time to integrate it into a NPM package. For better integration with the Graphem package it uses <a href="https://rollupjs.org/guide/en/" target="_blank">RollUp</a>, a module bundler, in the same style as <a href="" target="_blank">Open MCT YAMCS</a>. Thanks to this same configuration, it will export a file in Universal Module Definition (UMD).
 
-### Publishing the package to NPM
+### Publishing the package to NPM
 
 The package is published to NPM. And, it can be installed with `npm i graphem`.
 
-### Publishing the package on NASA Open MCT Community Plugins
+### Publishing the plugin on NASA Open MCT Community Plugins
 
 An email was sent to the NASA Open MCT community to publish the plugin on the [Community Plugins]() section.
 

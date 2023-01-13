@@ -23,7 +23,7 @@ const ADD_COMMENT = `
       }
     }
   }`;
-const addComment = event => {
+const addComment = (event) => {
   event.preventDefault();
   const form = event.target;
   const pageTitle = document.title;
@@ -32,15 +32,15 @@ const addComment = event => {
     fetchData(ADD_COMMENT, {
       path: path.value,
       pageTitle,
-      comment: { body: body.value, name: name.value, email: email.value }
+      comment: { body: body.value, name: name.value, email: email.value },
     })
-      .then(data => {
+      .then((data) => {
         alert("Thank you, all comments are moderated before publishing.");
         form.reset();
         return data;
       })
       .then(updateComments)
-      .catch(e => {
+      .catch((e) => {
         alert("Sorry, there was an error sending this comment.");
       });
   } else {
@@ -81,7 +81,7 @@ const updateComments = ({ comments }) => {
   const renderComments = () => {
     if (comments) {
       return `<ul class="keystone-comments">${comments
-        .map(comment => {
+        .map((comment) => {
           return `
           <li class="keystone-comment">
             <div class="l-stack">
@@ -98,7 +98,7 @@ const updateComments = ({ comments }) => {
                     month: "short",
                     day: "numeric",
                     hour: "2-digit",
-                    minute: "2-digit"
+                    minute: "2-digit",
                   })}</span>
                 </div>
               </div>
@@ -117,6 +117,4 @@ const updateComments = ({ comments }) => {
 };
 
 const path = window.location.pathname;
-fetchData(GET_COMMENTS, { path })
-  .then(updateComments)
-  .then(createForm);
+fetchData(GET_COMMENTS, { path }).then(updateComments).then(createForm);

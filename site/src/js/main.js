@@ -15,7 +15,7 @@ if (supportsLazyLoad || !supportsIntersectionObserver) {
   // If the browser supports native lazy loading
   // or doesn't support interSection observer
   // set the src and let the browser handle it
-  images.forEach(node => {
+  images.forEach((node) => {
     node.setAttribute("src", node.getAttribute("data-src"));
     node.removeAttribute("data-src");
   });

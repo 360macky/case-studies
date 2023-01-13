@@ -16,14 +16,14 @@ mutation Login ($email: String!, $password: String!) {
   }
 }`;
 
-const login = event => {
+const login = (event) => {
   event.preventDefault();
   const form = event.target;
   const { email, password } = form.elements;
   if (validateInputs([email, password])) {
     graphql(LOGIN, {
       email: email.value,
-      password: password.value
+      password: password.value,
     })
       .then(({ errors }) => {
         if (errors && errors.length) {
@@ -33,7 +33,7 @@ const login = event => {
           window.location = "/";
         }
       })
-      .catch(e => {
+      .catch((e) => {
         console.log(e);
         alert("Error during login");
       });
@@ -72,7 +72,7 @@ if (loginTarget) {
 }
 
 // Signup form
-const onSignUp = event => {
+const onSignUp = (event) => {
   event.preventDefault();
   const form = event.target;
 
@@ -80,7 +80,7 @@ const onSignUp = event => {
     name,
     email,
     password,
-    ["password-repeat"]: repeatPassword
+    ["password-repeat"]: repeatPassword,
   } = form.elements;
 
   if (validateInputs([name, email, password, repeatPassword])) {
@@ -88,12 +88,12 @@ const onSignUp = event => {
       graphql(SIGN_UP, {
         name: name.value,
         email: email.value,
-        password: password.value
+        password: password.value,
       })
         .then(() => {
           graphql(LOGIN, {
             email: email.value,
-            password: password.value
+            password: password.value,
           })
             .then(({ errors }) => {
               if (errors && errors.length) {
@@ -103,12 +103,12 @@ const onSignUp = event => {
                 window.location = "/";
               }
             })
-            .catch(e => {
+            .catch((e) => {
               console.log(e);
               alert("Error during login");
             });
         })
-        .catch(e => {
+        .catch((e) => {
           console.log(e);
           alert("Error creating new user");
         });
@@ -160,7 +160,7 @@ const LOGOUT = `mutation {
   }
 }`;
 
-const createLogoutEvent = authenticatedUser => event => {
+const createLogoutEvent = (authenticatedUser) => (event) => {
   if (authenticatedUser) {
     event.preventDefault();
     graphql(LOGOUT).then(({ data: { unauthenticateUser } }) => {
@@ -174,7 +174,7 @@ const createLogoutEvent = authenticatedUser => event => {
 const loginUI = document.getElementById("keystone-nav-login");
 if (loginUI) {
   getAuthenticatedUser()
-    .then(authenticatedUser => {
+    .then((authenticatedUser) => {
       if (authenticatedUser === null) return;
 
       if (authenticatedUser === false) {
@@ -185,7 +185,7 @@ if (loginUI) {
         loginUI.innerHTML = `Logout ${logoutIcon}`;
       }
     })
-    .catch(e => {
+    .catch((e) => {
       console.log(e);
     });
 }

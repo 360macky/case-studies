@@ -4,7 +4,7 @@ var CleanCSS = require("clean-css");
 require("css.escape");
 
 // Create a visual error message to overlay the site
-const CSSError = error => `/* Error compiling stylesheet */
+const CSSError = (error) => `/* Error compiling stylesheet */
 html,
 body {
   margin: 0;
@@ -35,11 +35,11 @@ body::after {
   position: fixed;
 }`;
 
-const compileScss = scss => {
+const compileScss = (scss) => {
   let result;
   try {
     result = sass.renderSync({
-      file: path.join(__dirname, "../../", scss)
+      file: path.join(__dirname, "../../", scss),
     });
   } catch (error) {
     result = error;
@@ -63,9 +63,9 @@ const compileScss = scss => {
 };
 
 module.exports = {
-  compileSassTargets: targets =>
+  compileSassTargets: (targets) =>
     Object.keys(targets).reduce((acc, key) => {
       acc[key] = compileScss(targets[key]);
       return acc;
-    }, {})
+    }, {}),
 };

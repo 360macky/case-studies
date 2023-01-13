@@ -6,7 +6,7 @@ const mfs = new MemoryFileSystem();
 const fs = require("fs");
 const path = require("path");
 
-const getWebpackFiles = compiler =>
+const getWebpackFiles = (compiler) =>
   new Promise((resolve, reject) => {
     compiler.outputFileSystem = mfs;
     compiler.inputFileSystem = fs;
@@ -28,19 +28,19 @@ const getWebpackFiles = compiler =>
     });
   });
 
-const resolveEntries = targets =>
+const resolveEntries = (targets) =>
   Object.keys(targets).reduce((acc, key) => {
     acc[key] = path.resolve(__dirname, "../../", targets[key]);
     return acc;
   }, {});
 
-const getWebpackConfig = targets => ({
+const getWebpackConfig = (targets) => ({
   mode: "production",
   devtool: "source-map",
   entry: resolveEntries(targets),
   output: {
     path: path.resolve(__dirname, "../../memory-fs/js/"),
-    globalObject: "window"
+    globalObject: "window",
   },
   module: {
     rules: [
@@ -50,15 +50,15 @@ const getWebpackConfig = targets => ({
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
+            presets: ["@babel/preset-env"],
+          },
+        },
       },
       {
         test: /\.svg$/,
-        loader: "svg-inline-loader"
-      }
-    ]
+        loader: "svg-inline-loader",
+      },
+    ],
     // ToDo: add more rules and loaders?
   },
   optimization: {
@@ -66,20 +66,20 @@ const getWebpackConfig = targets => ({
     minimizer: [
       new TerserPlugin({
         parallel: true,
-        sourceMap: true
-      })
-    ]
+        sourceMap: true,
+      }),
+    ],
   },
   plugins: [
     new webpack.EnvironmentPlugin({
       NODE_ENV: "production",
       KEYSTONE_API: "",
-      BUILD_NUMBER: Date.now()
-    })
-  ]
+      BUILD_NUMBER: Date.now(),
+    }),
+  ],
 });
 
 module.exports = {
-  compileWebpackTargets: targets =>
-    getWebpackFiles(webpack(getWebpackConfig(targets)))
+  compileWebpackTargets: (targets) =>
+    getWebpackFiles(webpack(getWebpackConfig(targets))),
 };

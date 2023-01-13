@@ -20,7 +20,7 @@ const CLAP = `
     }
   }`;
 
-const clap = event => {
+const clap = (event) => {
   event.preventDefault();
   const form = event.target;
   const pageTitle = document.title;
@@ -28,7 +28,7 @@ const clap = event => {
   if (path) {
     fetchData(CLAP, {
       path: path.value,
-      pageTitle
+      pageTitle,
     }).then(({ claps }) => {
       updateClaps(claps);
     });
@@ -58,9 +58,10 @@ const createForm = ({ claps }) => {
   clapsTarget.appendChild(form);
 };
 
-const updateClaps = claps => {
-  document.getElementById("keystone-claps").innerHTML = `<span>${claps ||
-    0}</span>`;
+const updateClaps = (claps) => {
+  document.getElementById("keystone-claps").innerHTML = `<span>${
+    claps || 0
+  }</span>`;
 };
 
 if (clapsTarget) {

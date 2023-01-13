@@ -7,5 +7,5 @@ module.exports = {
   debug(obj) {
     console.log(obj);
     return JSON.stringify(obj, null, 2);
-  }
+  },
 };

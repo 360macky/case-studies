@@ -24,9 +24,9 @@ mutation removeBookmark($user: ID!, $bookmark: ID!){
 }
 `;
 getAuthenticatedUser()
-  .then(authenticatedUser => {
+  .then((authenticatedUser) => {
     if (authenticatedUser) {
-      const createAddRemoveButton = bookmarks => {
+      const createAddRemoveButton = (bookmarks) => {
         const parent = window.document.querySelector(
           `#keystone-bookmarks-form`
         );
@@ -61,7 +61,7 @@ getAuthenticatedUser()
         parent.appendChild(form);
       };
 
-      const createBookmarkList = bookmarks => {
+      const createBookmarkList = (bookmarks) => {
         const parent = window.document.querySelector(
           `#keystone-bookmarks-list`
         );
@@ -73,7 +73,7 @@ getAuthenticatedUser()
          <div class="l-stack">
           <h2 class="h3">Your reading list</h2>
             <ul>
-            ${bookmarks.map(bookmark => {
+            ${bookmarks.map((bookmark) => {
               return `<li><a href="${bookmark.path}">${bookmark.name}</a></li>`;
             })}
             </ul>
@@ -83,33 +83,47 @@ getAuthenticatedUser()
         }
       };
 
-      const addBookmark = event => {
+      const addBookmark = (event) => {
         event.preventDefault();
         const form = event.target;
         const { user } = form.elements;
         graphql(BOOKMARK, {
           path: window.location.pathname,
           pageTitle: document.title,
-          user: user.value
-        }).then(({ data: { addBookmark: { bookmarks } } }) => {
-          window.document.querySelector(`#keystone-bookmarks-form`).innerHTML =
-            "";
-          createAddRemoveButton(bookmarks);
-        });
+          user: user.value,
+        }).then(
+          ({
+            data: {
+              addBookmark: { bookmarks },
+            },
+          }) => {
+            window.document.querySelector(
+              `#keystone-bookmarks-form`
+            ).innerHTML = "";
+            createAddRemoveButton(bookmarks);
+          }
+        );
       };
 
-      const removeBookmark = event => {
+      const removeBookmark = (event) => {
         event.preventDefault();
         const form = event.target;
         const { user, bookmark } = form.elements;
         graphql(REMOVE_BOOKMARK, {
           bookmark: bookmark.value,
-          user: user.value
-        }).then(({ data: { updateUser: { bookmarks } } }) => {
-          window.document.querySelector(`#keystone-bookmarks-form`).innerHTML =
-            "";
-          createAddRemoveButton(bookmarks);
-        });
+          user: user.value,
+        }).then(
+          ({
+            data: {
+              updateUser: { bookmarks },
+            },
+          }) => {
+            window.document.querySelector(
+              `#keystone-bookmarks-form`
+            ).innerHTML = "";
+            createAddRemoveButton(bookmarks);
+          }
+        );
       };
 
       if (authenticatedUser) {
@@ -120,6 +134,6 @@ getAuthenticatedUser()
       }
     }
   })
-  .catch(e => {
+  .catch((e) => {
     console.log(e);
   });

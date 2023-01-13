@@ -65,8 +65,7 @@ code:not([class]) {
   display: inline-block;
   font-size: 0.85rem;
   font-family: $FONT_MONO;
-  background: $COLOR_LIGHTER;
-  border: solid 1px $COLOR_LIGHT;
+  background: var(--COLOR_LIGHTER);
   border-radius: 0.4rem;
 }
 

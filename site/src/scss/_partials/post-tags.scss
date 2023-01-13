@@ -14,7 +14,7 @@
   display: inline-block;
   padding: 5px 10px;
   font-size: 0.8em;
-  background: $COLOR_LIGHTER;
+  background: var(--COLOR_LIGHTER);
   border: solid 1px $COLOR_LIGHT;
   text-decoration: none;
   margin-right: 5px;
@@ -24,5 +24,4 @@
 .post-tag:hover,
 .post-tag:focus {
   text-decoration: underline;
-  background: #fff;
 }
