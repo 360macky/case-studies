@@ -6,4 +6,4 @@ allPostsText: See all articles
 socialImage: ""
 ---
 
-Articles of Case Studies for Products/Projects
+Case Studies of my Products/Projects
