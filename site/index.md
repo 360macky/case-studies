@@ -1,9 +1,15 @@
 ---
 layout: "layouts/home.njk"
-title: Marcelo Case Studies
+title: Marcelo's Case Studies
 postsHeading: Latest articles
 allPostsText: See all articles
 socialImage: ""
 ---
 
-Case Studies of my Products & Projects
+<p class="l-first">
+  Case Studies of my Products & Projects
+</p>
+
+<p class="l-second">
+  «How this was designed, developed, and deployed»
+</p>
