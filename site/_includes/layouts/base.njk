@@ -9,7 +9,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +25,7 @@
         --THEME_COLOR: {{site.theme.primary.text}};
         --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
         --THEME_HOVER: #7a97ff;
+        --COLOR_DARK: #333;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -34,6 +34,7 @@
           --THEME_COLOR: #fff;
           --THEME_HIGHLIGHT: #fff;
           --THEME_HOVER: #7a97ff;
+          --COLOR_DARK: #ccc;
         }
       }
 
