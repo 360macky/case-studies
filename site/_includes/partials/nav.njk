@@ -22,14 +22,6 @@
           </a>
         </li>
       {% endfor %}
-
-      {% if site.keystone.login and navLocation === 'primary' %}
-        <li>
-          <a href="/login" class="l-login" id="keystone-nav-login">
-          Login{% include "partials/icons/login.svg" %}
-          </a>
-        </li>
-        {% endif%}
       </ul >
     </{{navLandmark}}>
   {% endif %}
