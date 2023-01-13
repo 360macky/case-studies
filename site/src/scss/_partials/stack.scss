@@ -10,3 +10,9 @@
 .l-stack--large > * + * {
   margin-top: 2rem;
 }
+
+.l-description {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}

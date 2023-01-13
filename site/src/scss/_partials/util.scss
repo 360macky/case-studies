@@ -33,8 +33,43 @@
 .theme-bg {
   background: var(--THEME_BACKGROUND, white);
 }
+
 .theme-color {
   color: var(--THEME_COLOR, black);
+}
+
+.hero {
+  border: 0.2rem solid var(--THEME_COLOR, black);
+  border-radius: 1.6rem;
+  background-size: cover;
+}
+
+/* If dark mode is enabled: */
+@media (prefers-color-scheme: dark) {
+  .hero {
+    background-image: url('/dark-background.webp');
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero {
+    animation-name: move-background;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+}
+
+@keyframes move-background {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: top;
+  }
+  100% {
+    background-position: center;
+  }
 }
 
 .theme-hightlight {

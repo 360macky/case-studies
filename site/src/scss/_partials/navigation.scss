@@ -10,6 +10,14 @@
   margin-left: 0.5rem;
 }
 
+.l-navigation a {
+  text-decoration: none;
+}
+
+.l-navigation a:hover {
+  color: var(--THEME_HOVER, black);
+}
+
 .navigation {
   list-style: none;
 }
