@@ -55,7 +55,7 @@ a {
   text-decoration-thickness: 0.1rem;
   text-decoration-skip-ink: auto;
   cursor: pointer;
-  text-decoration-color: var(--THEME_HOVER, black);
+  text-decoration-color: var(--THEME_UNDERLINE, black);
 }
 
 a:focus,
