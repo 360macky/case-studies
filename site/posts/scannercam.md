@@ -97,12 +97,11 @@ Currently ScannerCam is continuously tested with Playwright. Playwright is a Nod
 Future plans for ScannerCam include:
 
 - Progressive Web App (PWA) support.
-- Offline-first support.*
+- Offline-first support.\*
 - Unit tests with Jest (or other testing framework).
 - Add more languages.
 
-(*) Currently after the model is downloaded, the app works offline. I am thinking about how to make the app work offline from the beginning storing the model in the browser.
-
+(\*) Currently after the model is downloaded, the app works offline. I am thinking about how to make the app work offline from the beginning storing the model in the browser.
 
 ## References
 
