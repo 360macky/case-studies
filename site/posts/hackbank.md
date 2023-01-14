@@ -13,7 +13,7 @@ tags:
 
 ## Introduction
 
-Transfering money from one bank to another is a common task in our lives. But it is not always easy to know how much a transaction will cost. This is because each bank has its own commission and delay rules. This is why I created an application that allows you to calculate the commissions and delays of a bank-to-bank transaction. It is designed for the Peruvian market. And it is available for Android, iOS and Web.
+Transfering money from one bank to another is a common task in our lives. But it is not always easy to know how much a transaction will cost. This is because each bank has its own commission and delay rules. This is why I created an application that allows you to calculate the commissions and delays of a bank-to-bank transaction. And it is available for Android, iOS and Web.
 
 Introducing **Hackbank**
 
@@ -21,9 +21,9 @@ Introducing **Hackbank**
 
 Hackbank is available for Android, iOS and Web.
 
-I wanted to create a cross-platform application, that is reason why I chose React Native.
+I wanted to create a cross-platform application, that is reason why I chose <a href="https://reactnative.dev">React Native</a>.
 
-React Native is a framework that allows you to create applications for Android, iOS and Web. It is based on React, which is a JavaScript library for creating user interfaces.
+React Native is a framework that allows you to create applications for Android, iOS and Web. It is based on <a href="https://reactjs.org">React</a>, which is a JavaScript library for creating user interfaces.
 
 Expo is a framework that allows you to create React Native applications adding a lot of features. It is a great tool for creating performant applications.
 
@@ -31,7 +31,7 @@ Expo is a framework that allows you to create React Native applications adding a
 
 ### Concept of the Transfer Restriction Calculator (TRC)
 
-The operation of the prediction consists of the automatic review of a JSON file called **Transfer Restriction Calculator** (**TRC** from now on).
+The operation of the prediction consists of the automatic review of a <a href="https://www.json.org/json-en.html" target="_blank">JSON</a> file called **Transfer Restriction Calculator** (**TRC** from now on).
 
 This `TRC.json` file contains the rules by which the data of a transaction is evaluated.
 
@@ -62,19 +62,21 @@ If there is any problem, there is a "compass" button that allows the user to go 
 
 ### Publishing the Application
 
+In both cases I used <a href="https://expo.dev/eas" target="_blank">Expo Application Services</a> (EAS). EAS is a service that allows you to build and publish your application in a very simple way.
+
 #### Google Play Store
 
-The process of publishing in Google Play Store is very simple. I just had to create a Google Play Developer account and upload the APK file. I used EAS (Expo Application Services) to create the APK file.
+The process of publishing in Google Play Store is very simple. I just had to create a Google Play Developer account and upload the APK file. I used EAS to create the APK file.
 
 ### App Store
 
-The process of publishing in App Store is a little more complicated. I had to create an Apple Developer account, create an App ID and a Provisioning Profile. I used EAS (Expo Application Services) to create the IPA file.
+The process of publishing in App Store is a little more complicated. I had to create an Apple Developer account, create an App ID and a Provisioning Profile. I used EAS to create the IPA file.
 
 ### Web
 
-To publish in web I'm using [Firebase Hosting](https://firebase.google.com/docs/hosting).
+To publish in web I'm using <a href="https://firebase.google.com/docs/hosting">Firebase Hosting</a>. Firebase Hosting is a service that allows you to publish static files in a very simple way.
 
-The following commands are used to deploy:
+The following commands are used to deploy the application in web:
 
 ```bash
 npm run predeploy
@@ -83,8 +85,7 @@ npm run deploy-hosting
 
 # References
 
-- [React Native](https://reactnative.dev/)
-- [Expo](https://expo.io/)
-- [Firebase Hosting](https://firebase.google.com/docs/hosting)
-- [EAS](https://docs.expo.io/build/eas-build/)
-
+- <a href="https://reactnative.dev/" target="_blank">React Native</a>
+- <a href="https://expo.io/" target="_blank">Expo</a>
+- <a href="https://firebase.google.com/docs/hosting" target="_blank">Firebase Hosting</a>
+- <a href="https://docs.expo.io/build/eas-build/" target="_blank">EAS</a>
