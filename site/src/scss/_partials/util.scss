@@ -44,7 +44,10 @@
   background-size: cover;
 }
 
-/* If dark mode is enabled: */
+.hero {
+  background-image: url("/background.webp");
+}
+
 @media (prefers-color-scheme: dark) {
   .hero {
     background-image: url("/dark-background.webp");
