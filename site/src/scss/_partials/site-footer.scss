@@ -1,12 +1,17 @@
+footer {
+  border-top: 0.2rem solid var(--THEME_HOVER);
+  margin-top: 5rem !important;
+}
+
 .l-site-footer {
-  margin-top: 4rem;
+  margin-top: 1rem;
   padding: 2rem 0 3rem 0;
 }
 
 .l-site-footer-split {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 3rem 0;
+  padding: 1rem 0 1.5rem 0;
 }
 
 .l-site-footer-split > * {
@@ -32,5 +37,21 @@
 
 .go-portfolio {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
+}
+
+.call-to-action {
+  border: 0.1rem solid var(--THEME_HOVER);
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.call-to-action:hover {
+  box-shadow: 0px 0px 3rem 0px var(--THEME_HOVER);
+  -webkit-box-shadow: 0px 0px 3rem 0px var(--THEME_HOVER);
+  -moz-box-shadow: 0px 0px 3rem 0px var(--THEME_HOVER);
 }
