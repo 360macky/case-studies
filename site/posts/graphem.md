@@ -6,6 +6,9 @@ tags:
   - nasa
   - graphql
   - typescript
+  - npm
+  - openmct
+  - artemis
 ---
 
 ## Introduction
@@ -13,6 +16,14 @@ tags:
 <a href="https://software.nasa.gov/software/ARC-15256-1D" target="_blank">NASA Open MCT</a> is a web-based mission control framework for visualizing <a href="https://en.wikipedia.org/wiki/Telemetry" target="_blank">telemetry of space missions</a>. It allows <a href="https://nasa.github.io/openmct/plugins/" target="_blank">plugins</a> to be developed to extend its functionality. One of the cases that can be developed is to visualize telemetry data from a source that is different from the default ones. In this case, I developed an experimental plugin that allows you to visualize telemetry data from a <a href="https://graphql.org/" target="_blank">GraphQL</a> endpoint. Introducing **Graphem**.
 
 Graphem, a plugin that allows viewing telemetry data in NASA Open MCT directly from a GraphQL server.
+
+## Situation
+
+**Artemis 1** was an uncrewed Moon-orbiting mission. I wanted to visualize the telemetry data of this mission in NASA Open MCT. If all the information is available from a GraphQL endpoint, it is possible to visualize it in NASA Open MCT thanks to the plugin developed. Which is awesome!
+
+I collected the telemetry data from the <a href="https://ssd.jpl.nasa.gov/horizons/app.html#/" target="_blank">Horizons System</a>. Then I created a GraphQL server to expose the telemetry data.
+
+You can access this project on <a href="https://github.com/360macky/graphem-template-app" target="_blank">Graphem Template App</a>.
 
 ## Design Process
 
@@ -50,13 +61,14 @@ The package is published to NPM. And, it can be installed with `npm i graphem`.
 
 ### Publishing the plugin on NASA Open MCT Community Plugins
 
-An email was sent to the NASA Open MCT community to publish the plugin on the [Community Plugins]() section.
+An email was sent to the NASA Open MCT community to publish the plugin on the <a href="https://nasa.github.io/openmct/plugins/" target="_blank">Community Plugins</a> section.
 
 Currently the plugin is not published on the NASA Open MCT Community Plugins section. But soon it will be.
 
 ## References
 
-- <a href="" target="_blank">NASA Open MCT</a>
+- <a href="https://code.nasa.gov/" target="_blank">NASA Open Source Software</a>
+- <a href="https://nasa.github.io/openmct/" target="_blank">NASA Open MCT</a>
 - <a href="https://graphql.org/" target="_blank">GraphQL</a>
 - <a href="https://www.apollographql.com/docs/react/" target="_blank">Apollo client</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">fetch API</a>
