@@ -45,13 +45,5 @@ footer {
   padding: 0.5rem 1.2rem;
   border-radius: 0.5rem;
   text-decoration: none;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
 }
 
-.call-to-action:hover {
-  box-shadow: 0px 0px 3rem 0px var(--THEME_HOVER);
-  -webkit-box-shadow: 0px 0px 3rem 0px var(--THEME_HOVER);
-  -moz-box-shadow: 0px 0px 3rem 0px var(--THEME_HOVER);
-}
