@@ -11,11 +11,15 @@ tags:
   - firebase
 ---
 
+<img src="/hackbank__cover.png" alt="Hackbank on the Web" />
+
 ## Introduction
 
 Transfering money from one bank to another is a common task in our lives. But it is not always easy to know how much a transaction will cost. This is because each bank has its own commission and delay rules. This is why I created an application that allows you to calculate the commissions and delays of a bank-to-bank transaction. And it is available for Android, iOS and Web.
 
 Introducing **Hackbank**
+
+<img src="/hackbank_landing__cover.png" alt="Landing page of Hackbank" data-onpage="true" />
 
 ## Platform and Technology
 

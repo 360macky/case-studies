@@ -8,6 +8,8 @@ tags:
   - typescript
 ---
 
+<img src="/scannercam__cover.png" />
+
 ## Introduction
 
 Computer vision is a field of artificial intelligence that deals with the ability of computers to see and understand the world around them. It is a branch of artificial intelligence that deals with the ability of computers to see and understand the world around them. While the models used in computer vision usually require a lot of data and computing power, the TensorFlow.js library makes it possible to use these models in the browser.

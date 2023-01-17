@@ -10,6 +10,8 @@ tags:
   - platzi
 ---
 
+<img src="/platkey__cover.png" alt="Landing page of Platkey" />
+
 ## Introduction
 
 Some people like the experience of using web apps with keyboard shortcuts. <a href="https://platzi.com/" target="_blank">Platzi</a> is a platform that provides online courses, blogposts, live classes, and exams. The exams are taken in the browser, and the students can use the mouse to select the options. But now the students can use keyboard shortcuts to select the options faster.

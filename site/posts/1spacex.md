@@ -1,13 +1,15 @@
 ---
 title: 1SpaceX
 date: "2019-10-30"
-description: "Creating a simple filer editor web app"
+description: "Creating a web app that helps you to find all the information about SpaceX components."
 tags:
   - react
   - spacex
   - bootstrap
   - web
 ---
+
+<img src="/1spacex__cover.png" />
 
 ## Introduction
 

@@ -11,6 +11,8 @@ tags:
   - artemis
 ---
 
+<img src="/graphem__cover.png" alt="Landing page of Graphem" />
+
 ## Introduction
 
 <a href="https://software.nasa.gov/software/ARC-15256-1D" target="_blank">NASA Open MCT</a> is a web-based mission control framework for visualizing <a href="https://en.wikipedia.org/wiki/Telemetry" target="_blank">telemetry of space missions</a>. It allows <a href="https://nasa.github.io/openmct/plugins/" target="_blank">plugins</a> to be developed to extend its functionality. One of the cases that can be developed is to visualize telemetry data from a source that is different from the default ones. In this case, I developed an experimental plugin that allows you to visualize telemetry data from a <a href="https://graphql.org/" target="_blank">GraphQL</a> endpoint.

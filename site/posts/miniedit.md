@@ -8,6 +8,8 @@ tags:
   - web
 ---
 
+<img src="/miniedit__cover.png" alt="Landing page of MiniEdit" />
+
 ## Introduction
 
 There are many tools for editing images, but most of them are very heavy and require a lot of resources. What if we could have a simple tool that allows us to quickly apply filters to our images without having to download any software?
