@@ -6,8 +6,8 @@ module.exports = {
   authorEmail: "hello@marceloarias.com",
   authorHandle: "@360macky",
   authorName: "Marcelo Arias",
-  postsPerPage: 4,
-  socialImage: "/img/social.jpg",
+  postsPerPage: 6,
+  socialImage: "/social/thumbnail.png",
   theme: {
     primary: {
       background: "white",
