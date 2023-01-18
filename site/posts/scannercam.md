@@ -1,5 +1,5 @@
 ---
-title: ScannerCam
+title: Scanner Cam
 date: "2022-11-12"
 description: "Creating a web app to recognize objects using the camera"
 tags:
