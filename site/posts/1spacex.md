@@ -45,7 +45,7 @@ In this way, the app requested the data only once, and then everytime the user s
 
 The first version of the app was created with React 15. With Class components and the `componentDidMount` lifecycle method. I decided to update the app to React 18, using Functional components and hooks.
 
-# References
+## References
 
 - <a href="https://reactjs.org" target="_blank">React</a>
 - <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
