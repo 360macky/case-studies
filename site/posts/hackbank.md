@@ -11,7 +11,7 @@ tags:
   - firebase
 ---
 
-<img src="/hackbank__cover.png" alt="Hackbank on the Web" />
+<img src="/hackbank__cover.webp" alt="Hackbank on the Web" />
 
 ## Introduction
 
@@ -19,7 +19,7 @@ Transfering money from one bank to another is a common task in our lives. But it
 
 Introducing **Hackbank**
 
-<img src="/hackbank_landing__cover.png" alt="Landing page of Hackbank" data-onpage="true" />
+<img src="/hackbank_landing__cover.webp" alt="Landing page of Hackbank" data-onpage="true" />
 
 ## Platform and Technology
 

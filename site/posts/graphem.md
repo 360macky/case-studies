@@ -11,7 +11,7 @@ tags:
   - artemis
 ---
 
-<img src="/graphem__cover.png" alt="Landing page of Graphem" />
+<img src="/graphem__cover.webp" alt="Landing page of Graphem" />
 
 ## Introduction
 

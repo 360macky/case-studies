@@ -8,7 +8,7 @@ tags:
   - web
 ---
 
-<img src="/miniedit__cover.png" alt="Landing page of MiniEdit" />
+<img src="/miniedit__cover.webp" alt="Landing page of MiniEdit" />
 
 ## Introduction
 

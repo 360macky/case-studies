@@ -8,7 +8,7 @@ tags:
   - typescript
 ---
 
-<img src="/scannercam__cover.png" />
+<img src="/scannercam__cover.webp" />
 
 ## Introduction
 

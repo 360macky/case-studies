@@ -9,7 +9,7 @@ tags:
   - web
 ---
 
-<img src="/1spacex__cover.png" />
+<img src="/1spacex__cover.webp" />
 
 ## Introduction
 

@@ -10,7 +10,7 @@ tags:
   - platzi
 ---
 
-<img src="/platkey__cover.png" alt="Landing page of Platkey" />
+<img src="/platkey__cover.webp" alt="Landing page of Platkey" />
 
 ## Introduction
 
