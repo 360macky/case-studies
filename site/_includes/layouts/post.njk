@@ -29,7 +29,7 @@
       </div>
     </article>
     <div class="l-container">
-      <footer class="l-stack">
+      <div class="l-stack">
         {% if tags %}
           <h3>Tags</h3>
         {% endif %}
@@ -43,11 +43,7 @@
               {% endfor %}
             </ul>
           {% endif %}
-          <div class="l-stack">
-            {% include "partials/services/keystone-claps.njk" %}
-            {% include "partials/services/keystone-bookmarks.njk" %}
-          </div>
-        </footer>
+        </div>
       </div>
     </div>
     <div class="l-container l-measure">
