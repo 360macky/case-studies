@@ -17,7 +17,7 @@ tags:
 
 Transfering money from one bank to another is a common task in our lives. But it is not always easy to know how much a transaction will cost. This is because each bank has its own commission and delay rules. But now people can use a mobile application to calculate the commissions and delays of a bank-to-bank transaction.
 
-Introducing **Hackbank**
+Introducing **Hackbank**.
 
 ### What is Hackbank?
 
