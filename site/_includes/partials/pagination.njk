@@ -1,7 +1,7 @@
 {% set paginationModifierClasss = 'l-pagination--right' if paginationNextUrl and not paginationPrevUrl else '' %}
 
 {% if paginationNextUrl or paginationPrevUrl %}
-  <footer class="l-container">
+  <div class="l-container">
     <nav class="l-pagination {{paginationModifierClasss}}">
       {% if paginationPrevUrl %}
         <a href="{{ paginationPrevUrl }}" data-direction="backwards" class="l-pagination-link l-pagination-link--left">
@@ -25,5 +25,5 @@
         </a>
       {% endif %}
     </nav>
-  </footer>
+  </div>
 {% endif %}
