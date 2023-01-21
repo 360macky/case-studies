@@ -51,6 +51,6 @@ The user interface is designed with a responsive design, so it can be used on an
 
 MiniEdit is deployed on GitHub Pages.
 
-# References
+## References
 
 - <a href="https://pages.github.com">GitHub Pages</a>

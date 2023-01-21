@@ -87,7 +87,7 @@ npm run predeploy
 npm run deploy-hosting
 ```
 
-# References
+## References
 
 - <a href="https://reactnative.dev/" target="_blank">React Native</a>
 - <a href="https://expo.io/" target="_blank">Expo</a>
