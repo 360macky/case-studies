@@ -15,11 +15,30 @@ tags:
 
 ## Introduction
 
-Transfering money from one bank to another is a common task in our lives. But it is not always easy to know how much a transaction will cost. This is because each bank has its own commission and delay rules. This is why I created an application that allows you to calculate the commissions and delays of a bank-to-bank transaction. And it is available for Android, iOS and Web.
+Transfering money from one bank to another is a common task in our lives. But it is not always easy to know how much a transaction will cost. This is because each bank has its own commission and delay rules. But now people can use a mobile application to calculate the commissions and delays of a bank-to-bank transaction.
 
 Introducing **Hackbank**
 
+### What is Hackbank?
+
+**Hackbank** is a mobile application that allows you to calculate the commissions and delays of a bank-to-bank transaction. The user just needs to select the origin and destination banks, and the application will calculate the commissions and delays of the transaction.
+
 <img src="/hackbank_landing__cover.webp" alt="Landing page of Hackbank" data-onpage="true" />
+
+### Software Information
+
+- **Project technology**: React Native, Expo, Firebase Hosting, React Navigation
+- **Industry**: Finance
+- **Work Duration**: ≈4 months
+- **Accessibility WCAG**: AA (2.0)
+- **Version**: 1.1
+
+## Features
+
+- Calculate the commissions and delays of a bank-to-bank transaction
+- Support of the 4 most important banks in Peru
+- Multiplatform app for Android, iOS and Web
+- Usage without sign up
 
 ## Platform and Technology
 
@@ -56,11 +75,11 @@ Once the TRC was defined, I started to create the sketches of the design in Figm
 
 The flow of the application is as follows:
 
-- The user enters the application.
-- The user fills in the data of the transaction (bank of origin, bank of destination and amount).
-- The user clicks on the button "Predict" to calculate the result.
-- The user sees the result of the transaction.
-- The user can go back to the form to make another calculation.
+1. The user enters the application.
+2. The user fills in the data of the transaction (bank of origin, bank of destination and amount).
+3. The user clicks on the button "Predict" to calculate the result.
+4. The user sees the result of the transaction.
+5. The user can go back to the form to make another calculation.
 
 If there is any problem, there is a "compass" button that allows the user to go to the information page.
 
@@ -86,6 +105,9 @@ The following commands are used to deploy the application in web:
 npm run predeploy
 npm run deploy-hosting
 ```
+## License
+
+The source code of Hackbank is distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
 
 ## References
 

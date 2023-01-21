@@ -17,7 +17,26 @@ SpaceX is a private American aerospace manufacturer and space transportation ser
 
 Introducing **1spaceX**.
 
-A web app that helps you to find all the information about SpaceX components. You can find information about the capsules, cores, launches, payloads and rockets.
+### What is 1spaceX?
+
+**1spaceX** is a web app that helps you to find all the information about SpaceX components. You can find information about the capsules, cores, launches, payloads and rockets.
+
+### Software Information
+
+- **Project technology**: React, Bootstrap, SpaceX API, Vercel
+- **Industry**: Space Exploration
+- **Work Duration**: ≈2 months
+- **Accessibility WCAG**: AA (2.0)
+- **Version**: 7.4
+
+## Features
+
+- Search engine for all the physical components
+- Information about the physical components
+- Installable on mobile devices
+- Fully responsive
+- Reduces network requests by storing the data in the state
+- Usage without sign up
 
 ## Development Process
 
@@ -44,6 +63,10 @@ In this way, the app requested the data only once, and then everytime the user s
 ### Updating React to version 18
 
 The first version of the app was created with React 15. With Class components and the `componentDidMount` lifecycle method. I decided to update the app to React 18, using Functional components and hooks.
+
+## License
+
+The source code of 1SpaceX is distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
 
 ## References
 

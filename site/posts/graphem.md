@@ -19,7 +19,22 @@ tags:
 
 Introducing **Graphem**.
 
-Graphem, a plugin that allows viewing telemetry data in NASA Open MCT directly from a GraphQL server.
+## What is Graphem?
+
+**Graphem**, a plugin that allows viewing telemetry data in NASA Open MCT directly from a GraphQL server.
+
+### Software Information
+
+- **Project technology**: TypeScript, GraphQL, NPM, NASA Open MCT
+- **Industry**: Space Exploration
+- **Work Duration**: ≈3 months
+- **Version**: 2.0
+
+## Features
+
+- Visualize telemetry data from a GraphQL endpoint
+- Documentation of the plugin
+- Customizable with the plugin architecture of NASA Open MCT
 
 ## Situation
 
@@ -68,6 +83,10 @@ The package is published to NPM. And, it can be installed with `npm i graphem`.
 An email was sent to the NASA Open MCT community to publish the plugin on the <a href="https://nasa.github.io/openmct/plugins/" target="_blank">Community Plugins</a> section.
 
 Currently the plugin is not published on the NASA Open MCT Community Plugins section. But soon it will be.
+
+## License
+
+The source code of Graphem is distributed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>.
 
 ## References
 

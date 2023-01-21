@@ -18,23 +18,32 @@ Some people like the experience of using web apps with keyboard shortcuts. <a hr
 
 Introducing **PlatKey**.
 
-PlatKey is a browser extension that helps Platzi students to solve exams faster in Platzi. Also the browser extension provides new functionalities to improve the experience of taking classes in Platzi. And it is available in Chromium browsers and Safari.
+### What is PlatKey?
 
-- If you want to install the extension, you can do it from the <a href="https://platkey.dev/" target="_blank">PlatKey website</a>.
+**PlatKey** is a browser extension that helps Platzi students to solve exams faster in Platzi. Also the browser extension provides new functionalities to improve the experience of taking classes in Platzi. And it is available in Chromium browsers and Safari.
 
-- It is open-source and under MIT License, <a href="https://github.com/360macky/platkey" target="_blank">you can review the code in GitHub</a>.
+### Software Information
+
+- **Project technology**: JavaScript, HTML, CSS, Chrome API, Safari API
+- **Industry**: Education
+- **Work Duration**: ≈3 months
+- **Accessibility WCAG**: AA (2.0)
+- **Version**: 3.0
 
 ## Features
 
-Features available in the latest version of the extension:
+- Keyboard shortcuts to select exam options
+- Keyboard shortcuts to navigate between classes
+- Fully integrated whiteboard in the exam
+- Highlight classes in the Student Home
+- Save contributions in the Student Home
+- Search for classes using a search bar
+- Terminal-style design for Platzi UI
+- Multiplatform: available in Chromium-based browsers and Safari
 
-- Keyboard shortcuts to select exam options.
-- A fully integrated whiteboard in the exam.
-- Keyboard shortcuts to navigate between classes.
-- Highlight classes in the Student Home.
-- Save contributions in the Student Home.
-- Search for classes using a search bar.
-- Terminal-style design.
+If you want to install the extension, you can do it from the <a href="https://platkey.dev/" target="_blank">PlatKey website</a>.
+
+It is open-source and under MIT License, <a href="https://github.com/360macky/platkey" target="_blank">you can review the code in GitHub</a>.
 
 ## Design Process
 
@@ -88,6 +97,10 @@ The process was straightforward. I used the <a href="https://developer.apple.com
 In Safari, the extension has a different architecture. For example, it includes a wizard-like window to configure the extension once it is installed.
 
 After that, I uploaded the extension to the App Store only for Mac. And the extension was approved.
+
+## License
+
+The source code of PlatKey is distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
 
 ## References
 

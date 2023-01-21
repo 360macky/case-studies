@@ -14,9 +14,19 @@ tags:
 
 Computer vision is a field of artificial intelligence that deals with the ability of computers to see and understand the world around them. It is a branch of artificial intelligence that deals with the ability of computers to see and understand the world around them. While the models used in computer vision usually require a lot of data and computing power, the TensorFlow.js library makes it possible to use these models in the browser.
 
-Introducing **ScannerCam**.
+Introducing **Scanner Cam**.
 
-A web application that uses the TensorFlow.js computer vision library to detect objects in real time with the camera of a mobile device or a computer.
+## What is Scanner Cam?
+
+**Scanner Cam** is a web application that uses the TensorFlow.js computer vision library to detect objects in real time with the camera of a mobile device or a computer.
+
+### Software Information
+
+- **Project technology**: React, TypeScript, TensorFlow.js, Vercel, PWA
+- **Industry**: AI App
+- **Work Duration**: ≈4 months
+- **Accessibility WCAG**: AA (2.1)
+- **Version**: 1.0
 
 ## Features
 
@@ -104,6 +114,10 @@ Future plans for ScannerCam include:
 - Add more languages.
 
 (\*) Currently after the model is downloaded, the app works offline. I am thinking about how to make the app work offline from the beginning storing the model in the browser.
+
+## License
+
+The source code of ScannerCam is distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
 
 ## References
 
