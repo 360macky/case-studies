@@ -1,6 +1,6 @@
 ---
 layout: "layouts/home.njk"
-title: Marcelo's Case Studies
+title: ""
 postsHeading: Latest articles
 allPostsText: See all articles
 socialImage: ""

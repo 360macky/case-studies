@@ -1,4 +1,8 @@
-{% set pageTitle = title + ' - ' + site.name %}
+{% if title === "" %}
+  {% set pageTitle = site.name %}
+{% else %}
+  {% set pageTitle = title + ' - ' + site.name %}
+{%- endif -%}
 
 {% if metaTitle %}
   {% set pageTitle = metaTitle %}
