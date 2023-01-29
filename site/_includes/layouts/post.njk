@@ -9,9 +9,9 @@
   {% endif %}
   <p class="post-meta">
     {% if date %}
-      Written by {{ authorName }}
+      Published
       on <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
-    {% endif %} (about a {{ helpers.getReadingTime(content) }} minute read).
+    {% endif %}
   </p>
 </div>
 {% endset %}
