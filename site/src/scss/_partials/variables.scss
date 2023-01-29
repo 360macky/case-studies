@@ -13,6 +13,7 @@ $SCALE-1: 1rem * $RATIO;
 $SCALE-2: 1rem * $RATIO * $RATIO;
 $SCALE-3: 1rem * $RATIO * $RATIO * $RATIO;
 $SCALE-4: 1rem * $RATIO * $RATIO * $RATIO * $RATIO;
+$SCALE-4-5: 1rem * $RATIO * $RATIO * $RATIO * $RATIO * ($RATIO / 1.4);
 $SCALE-5: 1rem * $RATIO * $RATIO * $RATIO * $RATIO * $RATIO;
 
 $COLOR_LIGHTER: #eaeaea;
