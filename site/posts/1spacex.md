@@ -24,7 +24,7 @@ Introducing **1spaceX**.
 
 ### Software Information
 
-- **Project technology**: React, Bootstrap, SpaceX API, Vercel
+- **Project technology**: Next.js, React, Tailwind, SpaceX API, Vercel
 - **Industry**: Space Exploration
 - **Work Duration**: ≈2 months
 - **Accessibility WCAG**: AA (2.0)
