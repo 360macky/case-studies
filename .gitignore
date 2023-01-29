@@ -3,3 +3,4 @@ npm-debug.*
 .DS_Store
 node_modules
 dist
+TEMPLATE_STUDIES.md
