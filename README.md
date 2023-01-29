@@ -7,7 +7,13 @@
 </p>
 
 
-## 📦 Development
+## 🛠 Core Development
+
+### 📦 Web Framework
+
+Eleventy is a simple static site generator that uses vanilla JavaScript for templating. It is a great tool for building static websites and web applications.
+
+### 🎨 Template
 
 This website uses the 11ty template [Supermaya](https://github.com/madebymike/supermaya).
 
