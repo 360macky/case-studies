@@ -3,9 +3,10 @@ title: 1SpaceX
 date: "2019-10-30"
 description: "Creating a web app that helps you to find all the information about SpaceX components."
 tags:
+  - nextjs
+  - tailwind
   - react
   - spacex
-  - bootstrap
   - web
 ---
 
