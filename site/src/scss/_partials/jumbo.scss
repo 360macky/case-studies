@@ -6,6 +6,18 @@
   justify-content: center;
 }
 
+@media (max-width: 800px) {
+  .l-jumbo {
+    text-align: center;
+  }
+  .l-jumbo h1 {
+    line-height: 1;
+  }
+  .l-navigation {
+    justify-content: space-between;
+  }
+}
+
 .l-jumbo h1 {
   letter-spacing: -0.15rem;
   color: var(--THEME_HIGHLIGHT);

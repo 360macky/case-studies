@@ -23,3 +23,12 @@
   text-align: center;
   color: var(--COLOR_DARK);
 }
+
+@media (max-width: 800px) {
+  .l-first {
+    font-size: 1.1rem;
+  }
+  .l-second {
+    font-size: 1.1rem;
+  }
+}

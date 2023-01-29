@@ -28,3 +28,12 @@ $bp-site-head: 600px;
 .l-site-head > * + * {
   margin-top: var(--site-head-margin-top);
 }
+
+@media (max-width: 800px) {
+  .l-site-head {
+    margin: 0;
+  }
+  .l-site-head nav {
+    margin: 0;
+  }
+}
