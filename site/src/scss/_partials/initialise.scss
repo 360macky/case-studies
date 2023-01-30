@@ -89,3 +89,23 @@ img[data-onpage] {
 [tabindex="-1"]:focus {
   outline: none;
 }
+
+/* Mermaid styles */
+
+.mermaid span {
+  font-family: $FONT_NORMAL !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mermaid .label-container {
+    fill: transparent !important;
+    stroke: #ECECFF !important;
+  }
+  .mermaid span {
+    fill: transparent !important;
+    color: #ECECFF !important;
+  }
+  .mermaid .edgeLabel {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+}
