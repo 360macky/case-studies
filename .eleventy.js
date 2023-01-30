@@ -1,5 +1,6 @@
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginMermaid = require("@kevingimbel/eleventy-plugin-mermaid");
 
 // Import filters
 const dateFilter = require("./site/filters/date-filter.js");
@@ -52,6 +53,7 @@ module.exports = function (config) {
   // Plugins
   config.addPlugin(rssPlugin);
   config.addPlugin(syntaxHighlight);
+  config.addPlugin(pluginMermaid);
 
   // Watch for changes to my source files
   if (config.addWatchTarget) {
