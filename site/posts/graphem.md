@@ -76,7 +76,7 @@ Once the plugin was ready, it was time to integrate it into a NPM package. For b
 
 ### Publishing the package to NPM
 
-The package is published to NPM. And, it can be installed with `npm i graphem`.
+The package is published to NPM. And, it can be installed with `npm i graphem`. Or, using Yarn, `yarn add graphem`.
 
 ### Publishing the plugin on NASA Open MCT Community Plugins
 
