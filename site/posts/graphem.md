@@ -66,7 +66,7 @@ In this part I have to extend the functionality of the server. The server must b
 
 ### A plugin with Type checking
 
-NASA Open MCT does not support <a href="" target="_blank">TypeScript</a>. But for a better development experience this plugin was built on it. The first step was to create a <a href="" target="_blank">TypeScript configuration file</a>. This file is used to configure the TypeScript compiler. The configuration file is called `tsconfig.json` and is located in the root of the project.
+NASA Open MCT does not support <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a>. But for a better development experience this plugin was built on it. The first step was to create a <a href="" target="_blank">TypeScript configuration file</a>. This file is used to configure the TypeScript compiler. The configuration file is called `tsconfig.json` and is located in the root of the project.
 
 Currently there is an iniative to add Types support for NASA Open MCT. You can follow the progress in [this issue].
 
@@ -102,7 +102,7 @@ So I created a new <a href="https://rollupjs.org/guide/en/" target="_blank">Roll
 
 ## License
 
-The source code of Graphem is distributed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>.
+The source code of Graphem is distributed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>. This license is compatible with Open MCT.
 
 ## References
 
