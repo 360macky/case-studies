@@ -92,11 +92,33 @@ And only is executed in the `"https://platzi.com/*"` url.
 
 Many challenges were faced during the development of PlatKey. Some of them were:
 
+### Building Spotlight search
+
+#### Situation
+
+In order to achieve the Spotlight search, I needed to manipulate the DOM of the page. And I needed to do it in a way that does not affect the experience of the user by messing with the search functions, and preserving the accessibility and the UI established by Platzi.
+
+#### Solution
+
+There is a specific function to load the Spotlight search. This function is called only if the user activates the feature Spotlight.
+
+After that, it creates a "Spotlight Wrapper" element (`#NewSearchSpotlight`) that will contain the Spotlight search. Using the `insertBefore` and `appendChild` methods:
+
+```js
+// src/scripts/spotlight.js
+searchBar.parentNode.insertBefore(spotlightWrapper, searchBar);
+spotlightWrapper.appendChild(searchBar);
+```
+
+In this point some styles are applied to the search bar and the wrapper. This styles will take the search bar at the top-center, and will hide it by default. (So the user can activate the Spotlight search by pressing the `Ctrl+K` or `Cmd+K`).
+
+This step is applied 500ms after the page is loaded. This delay is to ensure that the search bar is loaded in the DOM.
+
 ### Safari Support
 
 #### Situation
 
-Safari is the second most used browser in the world according to <a href="https://gs.statcounter.com/browser-market-share" target="_blank">StatCounter</a>. And Safari has a lot of users in Mac OS. So I decided to make a version of PlatKey for Safari.
+<a href="https://www.apple.com/safari/" target="_blank">Safari</a> is the second most used browser in the world according to <a href="https://gs.statcounter.com/browser-market-share" target="_blank">StatCounter</a>. And Safari has a lot of users in Mac OS. So I decided to make a version of PlatKey for Safari.
 
 #### Solution
 
@@ -104,7 +126,7 @@ The process was straightforward. I used the <a href="https://developer.apple.com
 
 In Safari, the extension has a different architecture. For example, it includes a wizard-like window to configure the extension once it is installed.
 
-After that, I uploaded the extension to the App Store only for Mac. And the extension was approved by the App Store Team.
+After that, I uploaded the extension to the App Store only for Mac. And the extension was approved by the <a href="https://developer.apple.com/app-store/review/guidelines/" target="_blank">App Store Review Team</a>.
 
 ## License
 
