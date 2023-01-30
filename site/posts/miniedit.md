@@ -62,13 +62,13 @@ For example, the method to apply the emboss effect is as follows:
   }
 ```
 
-## Designing the User Interface
+### Designing the User Interface
 
 The user interface is designed with a responsive design, so it can be used on any device. The user interface is very simple, it has a button to upload an image, and a button to download the image after applying the filters.
 
-## Deployment Process
+### Deployment
 
-MiniEdit is deployed on GitHub Pages.
+MiniEdit is deployed on <a href="https://pages.github.com" target="_blank">GitHub Pages</a>. The deployment is done automatically when a new commit is pushed to the repository.
 
 ## License
 
@@ -76,4 +76,4 @@ The source code of MiniEdit is distributed under the <a href="https://opensource
 
 ## References
 
-- <a href="https://pages.github.com">GitHub Pages</a>
+- <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
