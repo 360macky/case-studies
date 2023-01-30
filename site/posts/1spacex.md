@@ -38,10 +38,21 @@ Introducing **1spaceX**.
 - Fully responsive
 - Reduces network requests by storing the data in the state
 - Usage without sign up
+- Dark mode support
+
+## Challenges
+
+Many challenges were faced during the development of 1spaceX. Some of them were:
+
+### Reducing network requests on search
+
+The first version of the app was requesting the data from the API every time the user search on the app. This was not a good practice, so I decided to request the data only once and store it in the state of the app.
+
+In this way, the app requested the data only once, and then everytime the user search, the app filtered the data from the state.
 
 ## Development Process
 
-1spaceX works with the <a href="https://docs.spacexdata.com" target="_blank">SpaceX API</a>, using <a href="https://reactjs.org" target="_blank">React</a> and <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.
+1spaceX works with the <a href="https://docs.spacexdata.com" target="_blank">SpaceX API</a>, using <a href="https://nextjs.org" target="_blank">Next.js</a> and <a href="https://reactjs.org" target="_blank">React</a>.
 
 The web app is totally responsive and it has a page for each physical component like: capsules, cores, launches, payloads and rockets.
 
@@ -55,15 +66,13 @@ The first page I created was the capsules page. With a search bar and the cards 
 
 The process of requesting and filtering the data from the API was the same for all the components. So, I decided to create a component that could be reused for all the components. This phase of the app was quite simple, I just had to create a new page for each component and add the component to the App.js file.
 
-### Reducing network requests
-
-The first version of the app was requesting the data from the API every time the user search on the app. This was not a good practice, so I decided to request the data only once and store it in the state of the app.
-
-In this way, the app requested the data only once, and then everytime the user search, the app filtered the data from the state.
-
 ### Updating React to version 18
 
 The first version of the app was created with React 15. With Class components and the `componentDidMount` lifecycle method. I decided to update the app to React 18, using Functional components and hooks.
+
+### Integrating Next.js 13
+
+In the latest version of 1spaceX, I decided to integrate Next.js 13, in order to use the new features of the framework.
 
 ## License
 
@@ -72,5 +81,7 @@ The source code of 1SpaceX is distributed under the <a href="https://opensource.
 ## References
 
 - <a href="https://reactjs.org" target="_blank">React</a>
-- <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>
 - <a href="https://docs.spacexdata.com" target="_blank">SpaceX API</a>
+- <a href="https://nextjs.org" target="_blank">Next.js</a>
+- <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+- <a href="https://vercel.com" target="_blank">Vercel</a>
