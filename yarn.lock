@@ -848,6 +848,13 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
+"@kevingimbel/eleventy-plugin-mermaid@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@kevingimbel/eleventy-plugin-mermaid/-/eleventy-plugin-mermaid-2.0.0.tgz#978ba07e068825243ed92246c4b80a4743736ce5"
+  integrity sha512-LPiyunKypHEBvzL1VZQFeV4knDzP1h+T2UkkQHiUwWnNWlhoKkYhM+8WkJnb3FHAGRFadqzV8/IRv953W/bqGg==
+  dependencies:
+    htmlencode "^0.0.4"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4220,6 +4227,11 @@ html-minifier@^4.0.0:
     param-case "^2.1.1"
     relateurl "^0.2.7"
     uglify-js "^3.5.1"
+
+htmlencode@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/htmlencode/-/htmlencode-0.0.4.tgz#f7e2d6afbe18a87a78e63ba3308e753766740e3f"
+  integrity sha512-0uDvNVpzj/E2TfvLLyyXhKBRvF1y84aZsyRxRXFsQobnHaL4pcaXk+Y9cnFlvnxrBLeXDNq/VJBD+ngdBgQG1w==
 
 htmlparser2@^3.9.1, htmlparser2@^3.9.2:
   version "3.10.1"
