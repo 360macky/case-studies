@@ -9,7 +9,7 @@
         {% set currentAttribute = '' %}
 
         {% if item.external %}
-          {% set externalAttribute = ' rel="external"' %}
+          {% set externalAttribute = ' rel="external" target="_blank"' %}
         {% endif %}
 
         {% if page.url == item.url %}
