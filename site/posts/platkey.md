@@ -88,15 +88,23 @@ The extension had more permissions in the Alfa version. But after the review of 
 
 And only is executed in the `"https://platzi.com/*"` url.
 
-### Safari Version
+## Challenges
 
-Safari is currently the second most used browser in the world. And Safari has a lot of users in Mac OS. So I decided to make a version of PlatKey for Safari.
+Many challenges were faced during the development of PlatKey. Some of them were:
 
-The process was straightforward. I used the <a href="https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_web_extension_for_safari">Safari Extension Builder</a> to transform the extension.
+### Safari Support
+
+#### Situation
+
+Safari is the second most used browser in the world according to <a href="https://gs.statcounter.com/browser-market-share" target="_blank">StatCounter</a>. And Safari has a lot of users in Mac OS. So I decided to make a version of PlatKey for Safari.
+
+#### Solution
+
+The process was straightforward. I used the <a href="https://developer.apple.com/documentation/safariservices/safari_web_extensions/converting_a_web_extension_for_safari" target="_blank">Safari Extension Builder</a> to transform the extension.
 
 In Safari, the extension has a different architecture. For example, it includes a wizard-like window to configure the extension once it is installed.
 
-After that, I uploaded the extension to the App Store only for Mac. And the extension was approved.
+After that, I uploaded the extension to the App Store only for Mac. And the extension was approved by the App Store Team.
 
 ## License
 
