@@ -36,7 +36,7 @@ Introducing **Graphem**.
 - Documentation of the plugin
 - Customizable with the plugin architecture of NASA Open MCT
 
-## Situation
+## Background
 
 **Artemis 1** was an uncrewed Moon-orbiting mission. I wanted to visualize the telemetry data of this mission in NASA Open MCT. If all the information is available from a GraphQL endpoint, it is possible to visualize it in NASA Open MCT thanks to the plugin developed. Which is awesome!
 
@@ -83,6 +83,22 @@ The package is published to NPM. And, it can be installed with `npm i graphem`.
 An email was sent to the NASA Open MCT community to publish the plugin on the <a href="https://nasa.github.io/openmct/plugins/" target="_blank">Community Plugins</a> section.
 
 Currently the plugin is not published on the NASA Open MCT Community Plugins section. But soon it will be.
+
+## Challenges
+
+Many challenges were faced during the development of Graphem. Some of them were:
+
+### Packaging the plugin
+
+#### Situation
+
+A plugin in <a href="https://nasa.github.io/openmct/plugins-documentation/" target="_blank">NASA Open MCT</a> is essentially a JavaScript function that it is passed by an `install` function.
+
+#### Solution
+
+I started looking for other plugins that were already published and its architecture. I adopted the same architecture as the <a href="https://github.com/evenstensberg/yamcs-openmct-plugin">Open MCT YAMCS</a> plugin. This plugin uses <a href="https://rollupjs.org/guide/en/" target="_blank">RollUp</a> to package the plugin.
+
+So I created a new <a href="https://rollupjs.org/guide/en/" target="_blank">RollUp</a> configuration file. This file is called `rollup.config.js` and is located in the root of the project. Using a CommonJS module, I exported the configuration of the plugin.
 
 ## License
 
