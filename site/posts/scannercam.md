@@ -37,6 +37,37 @@ Introducing **Scanner Cam**.
 - Works with two cameras in mobile devices.
 - Light and dark mode based on the user's preferred color scheme in the browser.
 
+## Challenges
+
+Many challenges were faced during the development of ScannerCam. Some of them were:
+
+### Reducing the time to response at first load
+
+#### Situation
+
+In the Beta version of ScannerCam, the first load of the app was taking too much time. The reason was that the COCO-SSD model was being downloaded automatically when the app was loaded.
+
+The user had to wait for the model to be downloaded before using the app.
+
+Google Lighthouse was reporting that the app was taking too much time to respond which caused a decrease in the performance score.
+
+#### Solution
+
+Instead of downloading the model automatically when the app was loaded, the model is downloaded when the user clicks on the new **"Start"** button.
+
+
+### Accomplishing Accessibility status bar
+
+#### Situation
+
+The progress bar is a very important element. It is a region that contains information about the progress of the download of the COCO-SSD model from 0% to 100%.
+
+But at the beginning, the progress bar was not accessible. Screen Readers were not able to read the progress bar, and also screen readers could not tell when the progress bar reached 100% (the end of the download).
+
+#### Solution
+
+Use ARIA attributes to make the progress bar accessible. Create a new ARIA region to announce the progress bar to the user using ARIA role status. This way, screen readers can read the progress bar and announce when the progress bar reached 100%, which means that the model was downloaded and the app is ready to be used.
+
 ## Development Process
 
 ### Importing the Neural Network Model
@@ -61,7 +92,7 @@ The Speech Synthesis API is a web standard that allows the web application to ta
 
 From every 5000 milliseconds, the app checks if the object-to-voice feature is active. If it is active, the app talks about the objects detected on camera.
 
-Some examples:
+Some examples based on the objects detected on camera:
 
 > I am identifying a person and a bycicle.
 
