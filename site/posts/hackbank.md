@@ -40,6 +40,46 @@ Introducing **Hackbank**.
 - Multiplatform app for Android, iOS and Web
 - Usage without sign up
 
+
+## Challenges
+
+Many challenges were faced during the development of Hackbank. Some of them were:
+
+### Organizing the information from the banks
+
+#### Situation
+
+Because every bank has its own commission and delay rules, it was necessary to organize the information in a way that was easy to use for the Hackbank algorithm in order to calculate the results.
+
+#### Solution
+
+At first, I thought that the best way to organize the information was to create a database with the information of each bank. But since this information is not updated frequently, I decided to use a custom file format.
+
+But since a custom file format would require a custom parser, I decided to use a JSON file with a custom structure. This file is available as `TRC.json`.
+
+This `TRC.json` file contains the rules by which the data of a transaction is evaluated.
+
+
+### Defining the algorithm of the Transfer Restriction Calculator (TRC)
+
+#### Situation
+
+Now with the information organized, I had to define the algorithm that would calculate the results of the transaction.
+
+#### Solution
+
+I adopted the following algorithm:
+
+```mermaid
+graph TD
+    A[Hackbank Calculation Workflow] -->|Fill bank and transaction amount| B(Hackbank Calculator)
+    B --> C[Identify Bank2Bank correlation]
+    C --> D[Verify restrict amounts]
+    D --> E[Verify restrict date]
+    E --> F[Obtain all the restrictions and sent to user]
+```
+
+
 ## Platform and Technology
 
 Hackbank is available for Android, iOS and Web.
