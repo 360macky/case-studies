@@ -53,7 +53,7 @@ The extension was made with an architecture that allows the extension to be used
 
 ### Creating the Keyboard Shortcuts Script
 
-I explored how exam options are structured at Platzi. In addition to the available options for a question, we also have a "Skip question" button. Once identified, I created a function that would detect keystrokes, and if they match the 5 options (in letters and numbers), or with the number 0/X, an option would be selected or the question would be skipped respectively.
+I explored **how exam options are structured at Platzi**. In addition to the available options for a question, we also have a "Skip question" button. Once identified, I created a function that would detect keystrokes, and if they match the 5 options (in letters and numbers), or with the number 0/X, an option would be selected or the question would be skipped respectively.
 
 In addition, considering that the user is sure of the selected option, once an option is selected, that option is confirmed immediately (or at least less than a second later, since there is a delay until the button "Next question" is available)
 
@@ -65,11 +65,15 @@ Once the keyboard shortcuts technology was created. I started to think about how
 
 I decided to use the <a href="https://developer.chrome.com/docs/extensions/mv3/intro/">Manifest V3</a> of Chrome. This version of the extension is more secure and has a better performance.
 
-Using features like service workers to load the user configuration, and content scripts to execute the keyboard shortcuts script.
+Manifest V3 has features like service workers to load the user configuration, and content scripts to execute the keyboard shortcuts script.
 
-### Designing the User Interface
+### UI Design
 
-The user interface was designed to be simple and intuitive. The extension has a popup window that contains only the configuration of the extension and links to the PlatKey website. The `popup.js` file is the JavaScript code whose scope is in this window.
+The user interface was designed to be simple and intuitive. Inspired by control panel in <a href="https://support.apple.com/guide/iphone/use-and-customize-control-center-iph59095ec58/ios" target="_blank">iOS</a>.
+
+<img src="/platkey__comparison.webp" alt="Landing page of Platkey" />
+
+The extension has a popup window that contains only the configuration of the extension and links to the PlatKey website. The `popup.js` file is the JavaScript code whose scope is in this window.
 
 ### Extension Workflow
 
@@ -96,7 +100,7 @@ Many challenges were faced during the development of PlatKey. Some of them were:
 
 #### Situation
 
-In order to achieve the Spotlight search, I needed to manipulate the DOM of the page. And I needed to do it in a way that does not affect the experience of the user by messing with the search functions, and preserving the accessibility and the UI established by Platzi.
+In order to achieve the Spotlight search feature, I needed to manipulate the DOM of the page. And I needed to do it in a way that does not affect the experience of the user by messing with the search functions, and preserving the accessibility and the UI established by Platzi.
 
 #### Solution
 
