@@ -97,7 +97,8 @@ img[data-onpage] {
 }
 
 @media (prefers-color-scheme: dark) {
-  .mermaid .label-container {
+  .mermaid .label-container,
+  .mermaid rect {
     fill: transparent !important;
     stroke: #ECECFF !important;
   }
