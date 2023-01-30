@@ -55,6 +55,19 @@ Google Lighthouse was reporting that the app was taking too much time to respond
 
 Instead of downloading the model automatically when the app was loaded, the model is downloaded when the user clicks on the new **"Start"** button.
 
+The following diagram shows the new flow of the app:
+
+```mermaid
+graph TD
+    A([User clicks Start app]) -->|Downloading TensorFlow model...| B[Model downloaded]
+    B --> |App can work offline from here...|C[Camera button available]
+    C --> D([User clicks on camera button])
+    D --> E[Is camera access allowed?]
+    E --> |No|C
+    E --> |Yes|G[React-Webcam component rendered]
+    G --> H[Tensorgram mechanism is started...]
+```
+
 
 ### Accomplishing Accessibility status bar
 
