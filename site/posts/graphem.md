@@ -84,6 +84,10 @@ An email was sent to the NASA Open MCT community to publish the plugin on the <a
 
 Currently the plugin is not published on the NASA Open MCT Community Plugins section. But soon it will be.
 
+### Creating the landing page of Graphem
+
+Finally, a landing page was created to show the features of the plugin. The landing page is available at <a href="https://graphem.space/" target="_blank">Graphem.space</a>. Built with <a href="https://astro.build" target="_blank">Astro</a>, a static site generator for modern web apps, and <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>, a utility-first CSS framework.
+
 ## Challenges
 
 Many challenges were faced during the development of Graphem. Some of them were:
@@ -115,3 +119,5 @@ The source code of Graphem is distributed under the <a href="https://www.apache.
 - <a href="https://rollupjs.org/guide/en/" target="_blank">RollUp</a>
 - <a href="https://github.com/akhenry/openmct-yamcs" target="_blank">Open MCT YAMCS</a>
 - <a href="https://www.oreilly.com/library/view/building-enterprise-javascript/9781788477321/03979156-167c-4598-85e8-0544241e2aed.xhtml" target="_blank">Universal Module Definition</a>
+- <a href="https://astro.build/" target="_blank">Astro</a>
+- <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>
