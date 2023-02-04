@@ -50,6 +50,19 @@ The first version of the app was requesting the data from the API every time the
 
 In this way, the app requested the data only once, and then everytime the user search, the app filtered the data from the state.
 
+In the following diagram, you can see this process:
+
+```mermaid
+graph TD
+    A[User] -->|go to| B(/component)
+    B --> C[Is component data available in Local Storage?]
+    C -->|Yes| D[Retreive data from Local Storage]
+    C -->|No| E[(Fetch data from SpaceX API)]
+    E -->G[Storage in Local Storage after process data]
+    G -->H[Display information]
+    D -->H[Display information]
+```
+
 ## Development Process
 
 1spaceX works with the <a href="https://docs.spacexdata.com" target="_blank">SpaceX API</a>, using <a href="https://nextjs.org" target="_blank">Next.js</a> and <a href="https://reactjs.org" target="_blank">React</a>.

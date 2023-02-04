@@ -109,4 +109,8 @@ img[data-onpage] {
   .mermaid .edgeLabel {
     background-color: rgba(0, 0, 0, 0.1) !important;
   }
+  .node path {
+    fill: transparent !important;
+    stroke: #ffffff !important;
+  }
 }
