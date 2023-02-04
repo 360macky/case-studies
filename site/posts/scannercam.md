@@ -148,7 +148,7 @@ tests
 
 Currently ScannerCam is continuously tested with Playwright. Playwright is a Node.js library to automate Chromium, Firefox, and WebKit with a single API.
 
-## Future
+## Future Improvements
 
 Future plans for ScannerCam include:
 

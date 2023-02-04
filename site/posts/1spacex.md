@@ -75,6 +75,8 @@ This project started with the idea of creating a web app that helps you to find 
 
 The first page I created was the capsules page. With a search bar and the cards associated to the capsules as the result of the search.
 
+After creating the Capsules page, I decided to create the other pages like: cores, launches, payloads and rockets...
+
 ### Adding more pages
 
 The process of requesting and filtering the data from the API was the same for all the components. So, I decided to create a component that could be reused for all the components. This phase of the app was quite simple, I just had to create a new page for each component and add the component to the App.js file.
@@ -86,6 +88,13 @@ The first version of the app was created with React 15. With Class components an
 ### Integrating Next.js 13
 
 In the latest version of 1spaceX, I decided to integrate Next.js 13, in order to use the new features of the framework.
+
+## Future Improvements
+
+Future plans of 1spaceX include:
+
+- Add filters to the search bar
+- Integrate more components from the SpaceX API
 
 ## License
 
