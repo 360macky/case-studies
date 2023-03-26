@@ -42,6 +42,8 @@ Dreamify is a Next.js 13 app, with the UI built with Tailwind CSS. And with the 
 
 ### Creating the app
 
+The app is created with Next.js 13. The new version brings radical changes to the way we work with React components and APIs.
+
 ### Creating the UI
 
 The UI is built with Tailwind CSS. Components like the Buttons, Inputs, Modals and Progress Bar are developed with [Shadcn/ui](https://ui.shadcn.com/docs), a collection of re-usable components built using [Radix UI](https://www.radix-ui.com/).
@@ -60,6 +62,11 @@ It uses two API routes:
 The Machine Learning model is run on cloud with [Replicate](https://replicate.com/). Replicate is a platform for running and sharing machine learning models. Dreamify uses the Replicate API to run the model.
 
 I choose Replicate because it's easy to use and it allows developers to check how the model is running per request.
+
+## Future Improvements
+
+- Create an Android/iPhone app
+- Saving images in browser
 
 ## License
 
