@@ -11,58 +11,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inter:wght@300;500;800&display=swap"
       rel="stylesheet"
-    />
+/>
 
     {% if site.theme %}
-    <style>
+      <style>
 
-      :root {
-        --THEME_BACKGROUND: {{site.theme.primary.background}};
-        --THEME_COLOR: {{site.theme.primary.text}};
-        --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
-        --THEME_HOVER: #425fc7;
-        --THEME_UNDERLINE: #7a97ff;
-        --COLOR_DARK: #333;
-        --COLOR_LIGHTER: #eaeaea;
-        --COLOR_MID: #767676;
-      }
-
-      @media (prefers-color-scheme: dark) {
         :root {
-          --THEME_BACKGROUND: #1b1f25;
-          --THEME_COLOR: #fff;
-          --THEME_HIGHLIGHT: #fff;
-          --THEME_HOVER: #7a97ff;
-          --COLOR_DARK: #dedede;
-          --COLOR_LIGHTER: #000;
-          --COLOR_MID: #c1c1c1;
+          --THEME_BACKGROUND: {{site.theme.primary.background}};
+          --THEME_COLOR: {{site.theme.primary.text}};
+          --THEME_HIGHLIGHT: {{site.theme.primary.highlight}};
+          --THEME_HOVER: #425fc7;
+          --THEME_UNDERLINE: #7a97ff;
+          --COLOR_DARK: #333;
+          --COLOR_LIGHTER: #eaeaea;
+          --COLOR_MID: #767676;
         }
-      }
 
-      .theme-secondary {
-        --THEME_BACKGROUND: {{site.theme.secondary.background}};
-        --THEME_COLOR: #425fc7;
-        --THEME_HIGHLIGHT: #000;
-      }
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --THEME_BACKGROUND: #1b1f25;
+            --THEME_COLOR: #fff;
+            --THEME_HIGHLIGHT: #fff;
+            --THEME_HOVER: #7a97ff;
+            --COLOR_DARK: #dedede;
+            --COLOR_LIGHTER: #000;
+            --COLOR_MID: #c1c1c1;
+          }
+        }
 
-      @media (prefers-color-scheme: dark) {
         .theme-secondary {
           --THEME_BACKGROUND: {{site.theme.secondary.background}};
-          --THEME_COLOR: #7a97ff;
-          --THEME_HIGHLIGHT: #fff;
+          --THEME_COLOR: #425fc7;
+          --THEME_HIGHLIGHT: #000;
         }
-      }
 
-      ::selection {
-        color: var(--COLOR_LIGHTER);
-        background: var(--THEME_COLOR);
-      }
-    </style>
+        @media (prefers-color-scheme: dark) {
+          .theme-secondary {
+            --THEME_BACKGROUND: {{site.theme.secondary.background}};
+            --THEME_COLOR: #7a97ff;
+            --THEME_HIGHLIGHT: #fff;
+          }
+        }
+
+        ::selection {
+          color: var(--COLOR_LIGHTER);
+          background: var(--THEME_COLOR);
+        }
+      </style>
     {% endif %}
 
     <link rel="stylesheet" href="/css/main.css">
@@ -86,12 +86,12 @@
       <main id="main-content" tabindex="-1">
         <div class="l-stack l-stack--large">
           {% block content %}{% endblock content %}
-          {% block foot %}
-            {% include "partials/global/site-foot.njk" %}
-          {% endblock %}
         </div>
       </main>
     </div>
+    {% block foot %}
+      {% include "partials/global/site-foot.njk" %}
+    {% endblock %}
     <script type="text/javascript" src="/js/service-worker.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
     {% include "partials/services/keystone-login-scripts.njk" %}
