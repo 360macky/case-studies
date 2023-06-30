@@ -45,12 +45,11 @@
 }
 
 .hero {
-  background-image: url("/background.webp");
 }
 
 @media (prefers-color-scheme: dark) {
   .hero {
-    background-image: url("/dark-background.webp");
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 
