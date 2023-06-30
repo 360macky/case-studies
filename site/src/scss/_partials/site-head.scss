@@ -3,6 +3,7 @@ $bp-site-head: 600px;
 .l-site-head {
   --site-head-flex-basis: 100%;
   --site-head-margin-top: 1rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: $bp-site-head) {
