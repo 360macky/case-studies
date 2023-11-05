@@ -1,9 +1,9 @@
 $bp-site-head: 600px;
 
 .l-site-head {
+  font-size: .875rem !important;
   --site-head-flex-basis: 100%;
   --site-head-margin-top: 1rem;
-  font-size: 0.75rem;
 }
 
 @media (min-width: $bp-site-head) {
@@ -14,16 +14,20 @@ $bp-site-head: 600px;
 }
 
 .l-site-head {
+  font-size: .875rem !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  margin: 0.5rem 0;
   flex-wrap: wrap;
 }
 
 .l-site-head > * {
-  flex-basis: var(--site-head-flex-basis);
+  // flex-basis: var(--site-head-flex-basis);
+}
+
+.site-title {
+  font-size: .875rem !important;
 }
 
 .l-site-head > * + * {
@@ -33,6 +37,7 @@ $bp-site-head: 600px;
 @media (max-width: 800px) {
   .l-site-head {
     margin: 0;
+    font-size: .875rem !important;
   }
   .l-site-head nav {
     margin: 0;

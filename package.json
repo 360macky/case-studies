@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "cross-env ELEVENTY_ENV=development npx eleventy clean && eleventy --serve",
+    "dev": "cross-env ELEVENTY_ENV=development npx eleventy clean && eleventy --serve",
     "build": "npx eleventy"
   },
   "keywords": [],
