@@ -48,6 +48,10 @@ The app is created with Next.js 13. The new version brings radical changes to th
 
 The UI is built with Tailwind CSS. Components like the Buttons, Inputs, Modals and Progress Bar are developed with [Shadcn/ui](https://ui.shadcn.com/docs), a collection of re-usable components built using [Radix UI](https://www.radix-ui.com/).
 
+The UI is designed to be accessible.
+
+It follows a color palette of slate and blue colors from Tailwind CSS.
+
 ### Building the API
 
 The API is built with Next.js API Routes. It uses the Replicate API to run the model.
@@ -61,16 +65,40 @@ It uses two API routes:
 
 The Machine Learning model is run on cloud with [Replicate](https://replicate.com/). Replicate is a platform for running and sharing machine learning models. Dreamify uses the Replicate API to run the model.
 
-I choose Replicate because it's easy to use and it allows developers to check how the model is running per request.
+I choose Replicate because it's easy to use and it allows developers to check how the model is running per request. Also the model is fast enough to generate images in a few seconds.
 
-## Future Improvements
+## AI-Powered Image Generation
 
-- Create an Android/iPhone app
-- Saving images in browser
+Humans can write a good prompt, but what if a model can write a prompt for you? That's what I'm working on right now:
 
-## License
+Using the **AI SDK** package from [Vercel](https://vercel.com/), I was able to set up a chatbot with custom instructions to **generate a better prompt** for the user. It is also aware of the current text prompt, allowing it to **ask the right questions instantly**.
 
-The source code of MiniEdit is distributed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+That's good, we have assistance and it's fast, but it's not enough! I already had **many advanced settings to the prompt**, so, why not to use the **chatbot to set up the advanced settings for the user**? Using GPT Functions, with the `useChat` hook I could achieve this.
+
+This is an example on how I handle a function call to add a _negative prompt_ as an advanced setting:
+
+```tsx
+const functionCallHandler: FunctionCallHandler = async (
+    chatMessages,
+    functionCall
+  ) => {
+    if (functionCall.name === "add_negative_prompt" && functionCall.arguments) {
+      const args = JSON.parse(functionCall.arguments);
+      if (args.prompt) {
+        setAdvancedPrompt({
+          ...advancedPrompt,
+          negativePrompt: args.prompt,
+        });
+      }
+    // Return a message to the chat
+    }
+```
+
+With this, the chatbot is able to set up the advanced settings for the user, making the process of generating an image with AI even easier.
+
+## Impact
+
+Dreamify has grown to a base of 400 users in the first month of opening the registration. This is the highest number of users for a software I've ever developed. I'm not only happy for this, but excited to see the possibilities to run experiments and get insights about the future of AI-powered image generation.
 
 ## References
 
